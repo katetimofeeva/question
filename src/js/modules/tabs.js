@@ -39,21 +39,7 @@ const tabs  = (headerSelector, tabsSelector, contentSelector, activeClass)=> {
             });
         }
     });
-
-    /*header.addEventListener('click', (e) => {
-      const target = e.target;
-              
-        if (target && (target.classList.contains(tabsSelector.replace(/\./, "")) ||
-        target.parentNode.classList.contains(tabsSelector.replace(/\./, ""))) ){ //можно вірезать запятую с помощью регулярного віражения tabsSelector.replace(/\./, ""
-            console.log('ok');
-            tab.forEach((item, i ) => {
-                if (target === item || target.parentNote === item) {
-                    hideTabContent();
-                    showTabContent(i);
-                }
-            });
-        }
-    });*/
 };
 
 export default tabs;
+

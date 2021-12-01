@@ -18,6 +18,20 @@ body {
   color: red;
 }
 
+.faded {
+  animation-name: faded;
+  animation-duration: 4s;
+}
+
+@keyframes faded {
+  from {
+    opacity:  0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -931,6 +945,7 @@ textarea:focus {
   display: none;
   margin-bottom: 3rem;
   width: 30rem;
+  margin: auto;
 }
 
 .popup_calc_content #type1 {
