@@ -33,7 +33,11 @@ const modals = () => {
             closeModalWindow ();
             modal.style.display = 'none';
             document.body.style.overflow = '';
+            
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)){
+            }  else {
             document.body.style.marginRight = `0px`;
+        }
             
         });
 
@@ -46,9 +50,13 @@ const modals = () => {
             modal.style.display = 'none';
 
         document.body.style.overflow = '';
-        document.body.style.marginRight = `0px`;
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+            } else {
+                document.body.style.marginRight = `0px`;
+            }
         }
-    })
+
+    });
 } 
 
     function closeModalWindow (){
